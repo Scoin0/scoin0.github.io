@@ -149,7 +149,7 @@ footer {
 }
 
 .img-headshot {
-  border: 6px solid #fff;
+  border: 6px solid #ea9085;
   height: 180px;
   width: 180px;
 }
@@ -161,7 +161,7 @@ footer {
 }
 
 .sidebar {
-  background-color: #49757a;
+  background-color: #6e5773;
   color: #fff;
 }
 
@@ -173,7 +173,7 @@ footer {
 footer a,
 .content a,
 .related-posts li a:hover {
-  color: #49757a;
+  color: #d45d79;
 }
 
 .read-more-link {
@@ -183,7 +183,7 @@ footer a,
 .read-more-link a {
   padding: 8px 16px;
   border: 1px solid;
-  border-color: #49757a;
+  border-color: #f8c3af;
   border-radius: 4px;
 }
 
