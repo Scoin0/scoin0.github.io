@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="kicker">{{ page.date | date: "%b %-d, %Y" | upcase }}{% if page.tags.size > 0 %} &middot; {{ page.tags | join: " / " | upcase }}{% endif %}{% assign words = content | number_of_words %} &middot; {{ words | plus: 199 | divided_by: 200 }} MIN READ</div>
+  <h1>{{ page.title }}</h1>
+  <div class="prose">
+{{ content }}
+  </div>
+  <p class="more"><a class="btn" href="{{ '/posts/' | relative_url }}">&larr; All posts</a></p>
+</article>

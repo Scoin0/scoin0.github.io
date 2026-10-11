@@ -1,0 +1,23 @@
+---
+layout: default
+title: All posts
+permalink: /posts/
+description: Every post, newest first.
+---
+<div class="kicker">ALL POSTS</div>
+<h1>Everything I've written</h1>
+<p class="lede">Newest first. This list updates by itself whenever a new post is added.</p>
+
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in posts_by_year %}
+<h2 class="year">{{ year.name }}</h2>
+<ul class="archive">
+  {% for post in year.items %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span>{{ post.date | date: "%b %-d" }}</span>
+    {% if post.description %}<p class="blurb">{{ post.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

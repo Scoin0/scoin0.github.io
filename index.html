@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+---
+<section class="intro">
+  <h1>{{ site.intro_heading }}</h1>
+  <p class="lede">{{ site.intro_text }}</p>
+  <p class="actions">
+    <a class="btn btn-primary" href="{{ '/posts/' | relative_url }}">Read all posts</a>
+    <a class="btn" href="{{ '/projects/' | relative_url }}">See my projects</a>
+  </p>
+</section>
+
+<hr class="sep">
+
+<div class="kicker">LATEST WRITING</div>
+
+{% for post in site.posts limit: site.home_post_count %}
+<article class="post">
+  <div class="kicker">{{ post.date | date: "%b %-d, %Y" | upcase }}{% if post.tags.size > 0 %} &middot; {{ post.tags | join: " / " | upcase }}{% endif %}{% assign words = post.content | number_of_words %} &middot; {{ words | plus: 199 | divided_by: 200 }} MIN READ</div>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <div class="prose">
+{{ post.content }}
+  </div>
+</article>
+{% unless forloop.last %}<hr class="sep">{% endunless %}
+{% endfor %}
+
+<p class="more"><a class="btn btn-primary" href="{{ '/posts/' | relative_url }}">See all posts &rarr;</a></p>

@@ -1,0 +1,10 @@
+# Add, remove, or reorder projects here. Newest first looks best.
+# "image" is optional: put a file in assets/images/ and use e.g. /assets/images/project-one.png
+
+- name: UsagiBot
+  url: https://github.com/Scoin0/UsagiBot
+  year: 2026
+  status: Active
+  stack: Java
+  description: Usagibot is a Twitch and Bancho IRC bot for Osu!
+  image:

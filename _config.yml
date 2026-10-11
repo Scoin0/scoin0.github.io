@@ -1,0 +1,30 @@
+# ---- Make it yours: edit these ----
+title: Field Notes
+tagline: Short essays, working notes, and side projects.
+author: Your Name
+github_username: your-username
+email: you@example.com
+
+# Big heading and sentence at the top of the home page
+intro_heading: "Things I'm thinking about, trying out, and getting wrong."
+intro_text: "Welcome. Below are my latest posts. Use the buttons at the top to see every post, my projects, or learn more about me."
+
+# How many of your newest posts appear in full on the home page
+home_post_count: 3
+
+# ---- Site settings (usually leave alone) ----
+# Posts dated "today" show up correctly when this matches where you live.
+timezone: Pacific/Honolulu
+
+# If your site lives at https://username.github.io/repo-name/ set baseurl to "/repo-name".
+# For a user site (https://username.github.io/) leave it empty.
+baseurl: ""
+
+permalink: /posts/:title/
+markdown: kramdown
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
