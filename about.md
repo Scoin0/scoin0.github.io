@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-heading: About Page
+heading: About Me
 kicker: About
 permalink: /about/
 description: A little about me.

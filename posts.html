@@ -6,7 +6,7 @@ description: Every post, newest first.
 ---
 <div class="kicker">ALL POSTS</div>
 <h1>Everything I've written</h1>
-<p class="lede">Newest first. This list updates by itself whenever a new post is added.</p>
+<p class="lede">A collection of everything I've written by newest.</p>
 
 {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 {% for year in posts_by_year %}

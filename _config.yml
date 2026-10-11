@@ -1,13 +1,13 @@
 # ---- Make it yours: edit these ----
-title: Field Notes
+title: Scoin's Playground
 tagline: Short essays, working notes, and side projects.
-author: Your Name
-github_username: your-username
-email: you@example.com
+author: Scoin0
+github_username: Scoin0
+email: 
 
 # Big heading and sentence at the top of the home page
-intro_heading: "Things I'm thinking about, trying out, and getting wrong."
-intro_text: "Welcome. Below are my latest posts. Use the buttons at the top to see every post, my projects, or learn more about me."
+intro_heading: "Heyo."
+intro_text: "Hello, this is a place where I may write down my thoughts and stuff I'm working on."
 
 # How many of your newest posts appear in full on the home page
 home_post_count: 3
