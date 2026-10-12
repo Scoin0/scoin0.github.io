@@ -10,7 +10,7 @@ intro_heading: "Heyo."
 intro_text: "Hello, this is a place where I may write down my thoughts and stuff I'm working on."
 
 # How many of your newest posts appear in full on the home page
-home_post_count: 3
+home_post_count: 5
 
 # ---- Site settings (usually leave alone) ----
 # Posts dated "today" show up correctly when this matches where you live.
